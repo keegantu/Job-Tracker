@@ -19,6 +19,7 @@
                 <th>status</th>
                 <th>interview_datetime</th>
                 <th>interview_location</th>
+                <th>actions</th>
             </tr>
         </thead>
         <tbody>
@@ -35,6 +36,11 @@
                 <td>{{ app[8] }}</td>
                 <td>{{ app[9] }}</td>
                 <td>{{ app[10] }}</td>
+                <td>
+                    <a href="/edit-application/{{app[0]}}">Edit</a>
+                    <a href="/delete-application/{{app[0]}}">Delete</a>
+                </td>
+
             </tr>
             {% endfor %}
         </tbody>
